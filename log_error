@@ -1,0 +1,17 @@
+
+
+
+  Exception: Cannot invoke "io.swagger.v3.oas.models.media.Schema.getProperties()" because "schema" is null
+        at org.openapitools.codegen.DefaultGenerator.processOperation(DefaultGenerator.java:1145)
+        at org.openapitools.codegen.DefaultGenerator.processPaths(DefaultGenerator.java:1036)
+        at org.openapitools.codegen.DefaultGenerator.generateApis(DefaultGenerator.java:561)
+        at org.openapitools.codegen.DefaultGenerator.generate(DefaultGenerator.java:878)
+        at org.openapitools.codegen.cmd.Generate.execute(Generate.java:440)
+        at org.openapitools.codegen.cmd.OpenApiGeneratorCommand.run(OpenApiGeneratorCommand.java:32)
+        at org.openapitools.codegen.OpenAPIGenerator.main(OpenAPIGenerator.java:66)
+Caused by: java.lang.NullPointerException: Cannot invoke "io.swagger.v3.oas.models.media.Schema.getProperties()" because "schema" is null
+        at org.openapitools.codegen.DefaultCodegen.fromParameter(DefaultCodegen.java:4349)
+        at org.openapitools.codegen.DefaultCodegen.fromOperation(DefaultCodegen.java:3777)
+        at org.openapitools.codegen.languages.DartClientCodegen.fromOperation(DartClientCodegen.java:559)
+        at org.openapitools.codegen.DefaultGenerator.processOperation(DefaultGenerator.java:1113)
+        ... 6 more
